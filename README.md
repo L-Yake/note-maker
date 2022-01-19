@@ -18,7 +18,6 @@ Update Details:
 ## Dependencies
 Templates/templates.py -- A python module I wrote for this project, containing functions-as-formats.
 
-<br>
 <hr>
 
 ## Purpose
