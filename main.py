@@ -141,8 +141,15 @@ def noteGenerator(sourcePath: str = None, destPath: str = None, fileFormat: str 
 
 if __name__ == "__main__":
     # print(sys.argv)
-    source = sys.argv[1]
-    destination = sys.argv[2]
-    outputFormat = sys.argv[3]
-    noteType = sys.argv[4]
+    if sys.argv[0] == "python":
+        source = sys.argv[2]
+        destination = sys.argv[3]
+        outputFormat = sys.argv[4]
+        noteType = sys.argv[5]
+    else:
+        source = sys.argv[1]
+        destination = sys.argv[2]
+        outputFormat = sys.argv[3]
+        noteType = sys.argv[4]
+        
     noteGenerator(source, destination, outputFormat, noteType)
