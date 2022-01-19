@@ -22,7 +22,7 @@ Code Execution Examples:
 
         /c/User/marikit/desktop>main.py source-folder/ notes-folder/ fileFormat noteFormat
 
-Arguments breakdown:
+(REQUIRED) Arguments breakdown:
 
         main.py -- Runs the noteGenerator function with the following inputs.
 
