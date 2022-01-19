@@ -12,12 +12,25 @@ Update Details:
         version 0.1.0 -- Added match/case syntax from Python 3.10 to declutter my code base.
 
         version 0.9.0 -- Updated/Added templates to Templates.py 
-<hr>
-
-A python script for generating notes ready to write in!
-
 <br>
 <hr>
+
+## Purpose
+For automating generation of templated notes, ready-to-write in. A use-case I find myself needing often, especially when I'm having a hard time starting an assignment. This abstracts and automate away "setting up" my notes which helps me get to taking notes faster and in a better format.
+<br>
+
+### Current personal use-case
+For a research project's literature review, I needed a quick way to template my notes so I could take them in a quick, well-organized manner since I need to read <18 research papers. Instead of copying and pasting a template "by-hand", I automated the process through Python.
+
+<hr>
+
+## Project Goals
+- Trying to create a Python program in the functional programming paradigm (to the exent of my knowledge).
+- Using as few external libraries as possible. (a.k.a. Pure Python)
+- Capture user-input from the command line interface ( CLI ).
+- Creating an application that is not solely for personal use. 
+<hr>
+<br>
 
 ## Code Execution Examples:
 
