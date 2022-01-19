@@ -4,7 +4,7 @@
 
         author, Marikit Cecilia
         date, 08-Jan-2022
-        version, 0.1.1
+        version, 0.1.2
         dependencies, {
             "templates" = [ 
                 templates/defaultTemplate, 
@@ -15,8 +15,6 @@
     noteGenerator() calls specifyDirectory() and noteNameGen() to validate paths and generate formatted note titles respectively.
 
     Current stable output formats: txt, md, html
-
-    NEEDS: A GITHUB REPO
 """
 
 import time
@@ -39,11 +37,9 @@ def noteNameGen(destinationPath:str , fileName: str, fileFormat: str = "txt"):
     """
     # Compatible formats:  txt, md, html
     notesTitle = fileName.split(".")[0].strip().replace(" ", "-")
-    if (notesTitle != None) or (notesTitle != False):
-        # Implicit list conversion for joining path to title and file format
-        newFilePath = "/".join([str(destinationPath), (notesTitle + "_notes." + fileFormat)])
-        return newFilePath, notesTitle
-    return 0
+    # Implicit list conversion for joining path to title and file format
+    newFilePath = "/".join([str(destinationPath), (notesTitle + "_notes." + fileFormat)])
+    return newFilePath, notesTitle
 
 
 def specifyDirectory(pathType: str, path: str) -> str:
@@ -135,23 +131,15 @@ def noteGenerator(sourcePath: str = None, destPath: str = None, fileFormat: str 
                         # Creates fileNames based on research paper titles and specified file format
                         templates.annotatedBibliographyTemplate(newFileName[0], newFileName[1], fileFormat)
             else:
-                print("Please use supported note formats! [txt, md, html]\nTIP: When entering file format, do NOT use a period.")
+                print("Please use supported note formats! [txt, md, html]\n\nTIP: When entering file format, do NOT use a period.\n")
 
     print("\nResearch Notes Created!")
     return 1
 
 
 if __name__ == "__main__":
-    # print(sys.argv)
-    if sys.argv[0] == "python":
-        source = sys.argv[2]
-        destination = sys.argv[3]
-        outputFormat = sys.argv[4]
-        noteType = sys.argv[5]
-    else:
-        source = sys.argv[1]
-        destination = sys.argv[2]
-        outputFormat = sys.argv[3]
-        noteType = sys.argv[4]
-        
+    source = sys.argv[1]
+    destination = sys.argv[2]
+    outputFormat = sys.argv[3]
+    noteType = sys.argv[4]
     noteGenerator(source, destination, outputFormat, noteType)
