@@ -21,16 +21,17 @@ For automating generation of templated notes, ready-to-write in. A use-case I fi
 
 ### Current personal use-case
 For a research project's literature review, I needed a quick way to template my notes so I could take them in a quick, well-organized manner since I need to read <18 research papers. Instead of copying and pasting a template "by-hand", I automated the process through Python.
-
+<br>
 <hr>
 
 ## Project Goals
 - Trying to create a Python program in the functional programming paradigm (to the exent of my knowledge).
 - Using as few external libraries as possible. (a.k.a. Pure Python)
 - Capture user-input from the command line interface ( CLI ).
-- Creating an application that is not solely for personal use. 
-<hr>
+- Creating an application that is not solely for personal use.
 <br>
+<hr>
+
 
 ## Code Execution Examples:
 
@@ -41,7 +42,7 @@ My personal use-case:
         /c/User/marikit/desktop>main.py research-articles/ research-notes/ md bib
 
 <br>
-<br>
+
 
 (REQUIRED) Arguments breakdown:
 
