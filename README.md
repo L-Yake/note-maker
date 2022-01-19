@@ -21,7 +21,7 @@ Templates/templates.py -- A python module I wrote for this project, containing f
 <hr>
 
 ## Purpose
-For automating generation of templated notes, ready-to-write in. A use-case I find myself needing often, especially when I'm having a hard time starting an assignment. This abstracts and automate away "setting up" my notes which helps me get to taking notes faster and in a better format.
+A **command-line** application for automating generation of templated notes, ready-to-write in. A use-case I find myself needing often, especially when I'm having a hard time starting an assignment. This abstracts and automate away "setting up" my notes which helps me get to taking notes faster and in a better format.
 <br>
 
 ### Current personal use-case
