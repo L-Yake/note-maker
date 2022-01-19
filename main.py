@@ -39,9 +39,11 @@ def noteNameGen(destinationPath:str , fileName: str, fileFormat: str = "txt"):
     """
     # Compatible formats:  txt, md, html
     notesTitle = fileName.split(".")[0].strip().replace(" ", "-")
-    # Implicit list conversion for joining path to title and file format
-    newFilePath = "/".join([str(destinationPath), (notesTitle + "_notes." + fileFormat)])
-    return newFilePath, notesTitle
+    if (notesTitle != None) or (notesTitle != False):
+        # Implicit list conversion for joining path to title and file format
+        newFilePath = "/".join([str(destinationPath), (notesTitle + "_notes." + fileFormat)])
+        return newFilePath, notesTitle
+    return 0
 
 
 def specifyDirectory(pathType: str, path: str) -> str:
