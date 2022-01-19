@@ -16,9 +16,8 @@ Update Details:
 <hr>
 
 ## Dependencies
-**Python Version 3.10**
-
-Templates/templates.py -- A python module I wrote for this project, containing functions-as-formats.
+- **Python Version 3.10**
+-  Templates/templates.py -- A python module I wrote for this project, containing functions-as-formats.
 
 <hr>
 
@@ -65,3 +64,6 @@ My personal use-case:
         noteFormat -- The desired output template format. Current 
                 accepted formats: note, bib (short for annotated-bibliography)
 
+                        note: Note format ideal for general note-taking.
+
+                        bib: Note format ideal for annotated bibliographies.
