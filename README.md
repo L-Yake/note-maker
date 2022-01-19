@@ -18,9 +18,17 @@ A python script for generating notes ready to write in!
 
 <br>
 <hr>
-Code Execution Examples:
+
+## Code Execution Examples:
 
         /c/User/marikit/desktop>main.py source-folder/ notes-folder/ fileFormat noteFormat
+
+My personal use-case:
+
+        /c/User/marikit/desktop>main.py research-articles/ research-notes/ md bib
+
+<br>
+<br>
 
 (REQUIRED) Arguments breakdown:
 
