@@ -16,6 +16,8 @@ Update Details:
 <hr>
 
 ## Dependencies
+**Python Version 3.10**
+
 Templates/templates.py -- A python module I wrote for this project, containing functions-as-formats.
 
 <hr>
